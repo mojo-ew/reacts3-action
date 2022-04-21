@@ -1,6 +1,6 @@
 export const CORS_BYPASS = "https://cors-anywhere.herokuapp.com/";
 // dev url
-export const BASE_API_URL = "https://dev-api-v3.ezcloud123.io";
+export const BASE_API_URL = "https://nfs8gfkn8a.execute-api.us-east-1.amazonaws.com/dev/";
 // live url
 // export const BASE_API_URL = "https://apiv3.ezcloud.co";
 //trail url
