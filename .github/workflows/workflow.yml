@@ -18,7 +18,7 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: npm test
-      - uses: mojo-ew/reacts3-action@master
+      - uses: mojo-ew/reacts3-action@main
         with:
           args: --acl public-read --follow-symlinks --delete
         env:
