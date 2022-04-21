@@ -3,7 +3,7 @@ name : React CLI
 on:
  push:
   branch:
-    -"master"
+    -"main"
 
 job: 
   Build:
