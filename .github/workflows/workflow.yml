@@ -8,6 +8,7 @@ on:
 jobs:
  Deploy:
    runs-on: ubuntu-latest
+   allow-failure: true
    steps:
      - name: Checkout
        uses: actions/checkout@v2
@@ -17,10 +18,10 @@ jobs:
 
      - name: Install dependencies
        run: npm install
-
+       allow-failure: true
      - name: Build static file
        run: npm run build
-
+       allow-failure: true
      - name: Configure AWS Credentials
        uses: aws-actions/configure-aws-credentials@v1
        with:
