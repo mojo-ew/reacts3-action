@@ -8,6 +8,7 @@ export const BASE_API_URL = "https://dev-api-v3.ezcloud123.io";
 //test url
 //export const BASE_API_URL = "https://dev-api-v3.ezcloud123.io";
 
+
 export const LOGIN_URL = BASE_API_URL + "/user/login";
 export const CREATE_CUSTOMER = BASE_API_URL + "/user/customerRegistration";
 export const CREATE_PREMIUM_CUSTOMER = BASE_API_URL + "/user/createCustomer";

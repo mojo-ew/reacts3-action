@@ -61,8 +61,7 @@
     "start": "ncp node_modules/dwt/dist public/dwt-resources && react-scripts start",
     "build": "react-scripts --max_old_space_size=4096 build && ncp node_modules/dwt/dist build/dwt-resources",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "react-scripts build && aws s3 rm s3://apiv3dev-fe/ --recursive && aws s3 cp ./build s3://apiv3dev-fe/ --recursive"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
