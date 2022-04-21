@@ -1,19 +1,20 @@
-name : React CLI
+name: React CI
 
 on:
- push:
-  branch:
-    -"main"
+  push:
+    branches:
+      - "main"
 
-job: 
-  Build:
-   run-on:ubuntu-latest
-strategy:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
       matrix:
         node-version: [15.x]
-steps:
+    
+    steps:
       - uses: actions/checkout@v1
       - run: npm install
       - run: npm run build
       - run: npm test
-      
